@@ -10,7 +10,7 @@ In time critical algorithms, we might need to do some tasks or calculations quit
 {%- include MathJax.html -%}
 ## Introduction
 
-In motor control applications, we frequently need to perform coordinate transformations, such as the Clarke and Park transformations, to convert between the ABC and dq reference frames. These transformations involve calculating sine and cosine functions, which can be computationally intensive, particularly when the control loop runs at high frequencies (typically 10-100 kHz). For details, please check my [previous post]([link-to-cordic-post](https://ycetindev.github.io/posts/2024-11-09-STM32G4-Cordic.html)).
+In motor control applications, we frequently need to perform coordinate transformations, such as the Clarke and Park transformations, to convert between the ABC and dq reference frames. These transformations involve calculating sine and cosine functions, which can be computationally intensive, particularly when the control loop runs at high frequencies (typically 10-100 kHz). For details, please check my [previous post](https://ycetindev.github.io/posts/2024-11-09-STM32G4-Cordic.html).
 In that post, we have used G4's CORDIC coprocessor to accelerate our trigonometric calculations, but in F3 series we don't have any CORDIC or similar hardware. So, instead of  that, I'm gonna use standard math lib functions for the calculation of cosine and sine terms, however, I'll be placing Clarke and Park transformations in the RAM to speed up the calculations.
 
 I'm just gonna copy here the simplified version which is ready to implement in C from previous post:
