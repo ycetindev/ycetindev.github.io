@@ -13,7 +13,7 @@ My plan is to model this using Simscape library in continuous domain first, then
 
 ## Simscape model
 
-![Simscape model](/assets/DCMotor_SS.png)
+![Simscape model](/assets/DCMotor_SS1.png)
 
 In this part, I'm just providing 10kHz PWM signal as an input with fixed duty cycle to provide 1V to the motor.
 
@@ -21,7 +21,7 @@ In this part, I'm just providing 10kHz PWM signal as an input with fixed duty cy
 
 ## Mathematical model
 
-![Mathematical model](/assets/DCMotor_MM.png)
+![Mathematical model](/assets/DCMotor_MM1.png)
 
 Here's the comparison result for Simscape model vs Mathematical model.
 
@@ -73,6 +73,9 @@ Finally, here are the captured scope waveforms from DAC outputs. They're also pe
 
 ![TBD](/assets/DCMotor_F3DiscoEmulator_ScopeWaveform.png)
 
-The complete source code, simulations, logs, scope waveforms and scripts is available in the [repository](https://github.com/ycetindev/stm32g4/tree/main/G431_ITMvsUART).
+The complete source code, simulations, logs, scope waveforms and scripts is available in the [repository](https://github.com/ycetindev/stm32f3/tree/main/F3Disco_MotorEmulator).
 
-That's all for this part. In the next part, we'll be covering the control part to regulate the motor speed.
+That's all for this part. Next up, we'll be diving into control system implementation to regulate the motor speed.
+
+Of course, watching numbers and waveforms can't match the satisfaction of hearing a real motor whirring to life. 
+But being able to start developing and testing control algorithms without wrestling with cables, power supplies, or that one encoder that just won't behave... that's a pretty good feeling too! And if you disagree, well, just wait a bit more...
