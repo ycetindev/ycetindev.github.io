@@ -15,7 +15,7 @@ To make the emulator fully self-contained and testable, I've made several improv
 
 Added TIM2 in input capture mode to measure the incoming 10kHz PWM signal's duty cycle. This allows our emulator to respond to external PWM commands just like a real motor driver would. Simple trick here: keeping PSC register at minimum (0) will allow us to spec ARR (or PRD) register at maximum - hence gives us better resolution when capturing the signal.  
 
-![Emulator Simple Block Diagram](/assets/Emulator_BlockDiagram.png)
+![Emulator Simple Block Diagram](/assets/Emulator_BlockDiagram.PNG)
 
 ```c
 // TIM2 ISR Callback
