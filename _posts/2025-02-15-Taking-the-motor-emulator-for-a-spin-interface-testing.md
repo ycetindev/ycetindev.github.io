@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Taking the motor emulator for a spin - interface testing"
-date: 2025-02-15 13:30:00 +0000
+title: "Taking the motor emulator for a spin: interface testing"
+date: 2025-02-15 10:30:00 +0000
 categories: embedded-systems motor-control emulator stm32 instrumentation testing
 ---
 
